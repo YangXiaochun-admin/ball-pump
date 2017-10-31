@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		html{
+			position: relative;
+		}
+		.ballon{
+			position: absolute;
+			top: 0;
+			width: 160px;
+			height: 160px;
+			background-color: #fafaf9;
+			border-radius: 160px 160px 64px 160px;
+			transform: rotate(45deg);
+			/* x y 羽化程度 半径 颜色 内外模式 */
+			box-shadow: -8px -8px 80px 10px #873940 inset;
+		}
+		.ballon:before{
+			content: "";
+			display: block;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			border: 8px solid transparent;
+			border-right-color:#873940;
+			transform: rotate(45deg);
+			border-radius: 50%;
+
+		}
+	</style>
+</head>
+<body>	
+</body>
+<script src='ba.js'></script>
+</html>
